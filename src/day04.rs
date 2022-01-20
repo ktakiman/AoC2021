@@ -52,9 +52,9 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     let datafile = if args.len() > 1 {
-        "./data/day4-sample.txt"
+        "./data/day04-sample.txt"
     } else {
-        "./data/day4-data.txt"
+        "./data/day04-data.txt"
     };
     println!("input file: {:?}", datafile);
 

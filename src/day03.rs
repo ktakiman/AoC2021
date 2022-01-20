@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{self, BufRead};
 
 fn main() {
-    let file = File::open("./data/day3-data.txt").expect("failed to open a file");
+    let file = File::open("./data/day03-data.txt").expect("failed to open a file");
 
     let mut lines: Vec<String> = io::BufReader::new(&file).lines().map(|line| line.unwrap()).collect();
 

@@ -51,9 +51,9 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     let datafile = if args.len() > 1 {
-        "./data/day8-sample.txt"
+        "./data/day08-sample.txt"
     } else {
-        "./data/day8-data.txt"
+        "./data/day08-data.txt"
     };
     println!("input file: {:?}", datafile);
 
@@ -112,6 +112,7 @@ fn main() {
             .iter()
             .map(|s| matched.iter().position(|m| m == s).unwrap())
             .collect();
+
         let sec_two_trans: Vec<usize> = sec_two
             .iter()
             .map(|s| matched.iter().position(|m| m == s).unwrap())

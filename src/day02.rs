@@ -44,7 +44,7 @@ fn main() {
     let path = env::current_dir();
 
     // open returns io::result
-    let file = File::open("./data/day2-data.txt").expect("failed to open a file");
+    let file = File::open("./data/day02-data.txt").expect("failed to open a file");
 
     let lines = io::BufReader::new(file).lines();
 

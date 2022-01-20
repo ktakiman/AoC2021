@@ -40,7 +40,7 @@ fn main() {
     println!("{:?}", path);
 
     // open returns io::result
-    let file = File::open("./data/day1-data.txt").expect("failed to open a file");
+    let file = File::open("./data/day01-data.txt").expect("failed to open a file");
 
     let lines = io::BufReader::new(file).lines();
 
